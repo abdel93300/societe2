@@ -3,6 +3,7 @@ public class Personne {
 	public Personne(String nom, String prenom, Integer age) {
 		this.prenom = prenom;
 		this.nom = nom;
+		this.age=age;
 	}
 	
 	String prenom;

@@ -4,7 +4,8 @@
     	      	  {
     	  Personne formateur=new Personne("Eric","Siber",0);  	  
     	  Personne apprennant=new Personne("Abdel","Nemmiche",51);
-    	  console.log();
+    	  System.out.println(formateur);
+    	  System.out.println(apprennant);
     	  }
     	  
     	   }
