@@ -10,11 +10,13 @@ public class Personne {
 	String nom;
 	Integer age;
 	
-	@Override
+	
 	public String toString() {
 		// TODO Auto-generated method stub
-		 return prenom+" "+nom+ "age :" +age;
-			}
+		if (age != null) 
+		return prenom+" "+nom+ "age :" +age;
+		else return prenom+nom;		
+	}
 
 		
 	}
