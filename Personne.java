@@ -17,14 +17,15 @@ public class Personne {
 		this.age = age;
 	}
 
-
 	public String toString() {
 		String description = prenom + " " + nom;
-		if (this.age != null)
-		 {
-			description = description + " : " + this.age + " an(s) ";
+		if (this.age != null) {
+			description = description + " : " + this.age + " an(s)";
 		}
 		return description;
 	}
 
 }
+
+
+
