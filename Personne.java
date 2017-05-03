@@ -3,20 +3,31 @@ public class Personne {
 	private String prenom;
 	private String nom;
 	private Integer age;
+	
+	
+	   public int getAge() {
+		      return age;
+		   }
 
-	public Personne(String nom, String prenom) {
-		super();
-		this.prenom = prenom;
-		this.nom = nom;
-	}
+		   public String getNom() {
+		      return nom;
+		   }
 
-	public Personne(String prenom, String nom, Integer age) {
-		super();
-		this.prenom = prenom;
-		this.nom = nom;
-		this.age = age;
-	}
+		   public String getPrenom() {
+		      return prenom;
+		   }
 
+		   public void setAge( int newAge) {
+		      age = newAge;
+		   }
+
+		   public void setNom(String newNom) {
+		      nom = newNom;
+		   }
+
+		   public void setPrenom( String newPrenom) {
+		      prenom = newPrenom;
+		   }
 	public String toString() {
 		String description = prenom + " " + nom;
 		if (this.age != null) {
