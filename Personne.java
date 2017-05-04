@@ -1,33 +1,49 @@
 public class Personne {
 
-	private String prenom;
-	private String nom;
+	public String prenom;
+	public String nom;
 	private Integer age;
 	
-	
+	public Personne(String nom, String prenom) {
+		super();
+		this.prenom = prenom;
+		this.nom = nom;
+	}
+
+	public Personne(String prenom, String nom, Integer age) {
+		super();
+		this.prenom = prenom;
+		this.nom = nom;
+		this.age = age;
+	}
+
 	   public int getAge() {
-		      return age;
+		      return this.age;
 		   }
 
 		   public String getNom() {
-		      return nom;
+		      return this.nom;
 		   }
 
 		   public String getPrenom() {
-		      return prenom;
+		      return this.prenom;
 		   }
 
 		   public void setAge( int newAge) {
-		      age = newAge;
+		      this.age = newAge;
 		   }
 
 		   public void setNom(String newNom) {
-		      nom = newNom;
-		   }
+		    if (nom == null) this.nom= newNom;
+		    else System.out.println("Modification nom interdite pour : "+ this.nom +" "+this.prenom);
+		    		 };
 
 		   public void setPrenom( String newPrenom) {
-		      prenom = newPrenom;
-		   }
+			   if (prenom == null) this.prenom= newPrenom;
+			    else System.out.println("Modification prénom interdite pour : " + this.nom+" " +this.prenom);
+			    		 };
+
+		   
 	public String toString() {
 		String description = prenom + " " + nom;
 		if (this.age != null) {

@@ -2,13 +2,11 @@ public class Programme {
 	public static void main(String[] args) {
 		// création
 	
-		Personne moi = new Personne();		
-		Personne formateur = new Personne();
-		 moi.setNom("Abdel");
-	     moi.setPrenom("Nemmiche");
-	     moi.setAge(51);
-	     formateur.setNom("Eric");
-	     formateur.setPrenom("Siber");
+		 Personne moi = new Personne("Abdel","Nemmiche",51);		
+	     Personne formateur = new Personne("Eric","Siber");
+		 moi.setPrenom("Abdel");
+		 formateur.setNom("Siber");
+	     
 	   	     
 		// affichage
 		System.out.println(moi);
