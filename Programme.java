@@ -4,11 +4,12 @@ public class Programme {
 	
 		 Personne moi = new Personne("Abdel","Nemmiche",51);		
 	     Personne formateur = new Personne("Eric","Siber");
-	     Refugie marine=new Refugie("Marine","LePen",99);
-	     Refugie kader=new Refugie("Kader","Syrien",25);
+	     Refugie marine=new Refugie("Marine","LePen");
+	     Refugie kader=new Refugie("Kader","Syrien");
 		 moi.setPrenom("Abdel");
 		 formateur.setNom("Siber");
-		 kader.setestRegularise(false);	   	     
+		 kader.setAge(25);
+		 kader.setEstRegularise(true);
 		// affichage
 		System.out.println(moi);
 		System.out.println(formateur);

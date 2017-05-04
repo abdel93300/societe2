@@ -3,8 +3,7 @@ public class Personne {
 	public  String prenom;
 	public String nom;
 	public Integer age;
-	public  boolean estRegularise;
-	
+		
 	public Personne(String nom, String prenom) {
 		super();
 		this.prenom = prenom;

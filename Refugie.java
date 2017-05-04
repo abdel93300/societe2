@@ -1,30 +1,31 @@
 // class Refugie héritée de la class Personne
 public class Refugie extends Personne {
-	 static boolean estRegularise=false;
-	 public Refugie(String prenom, String nom, int age){
-			super(prenom,nom,age);
-			estRegularise=false;
+	 boolean estRegularise=false;
+	 
+	 public boolean ilEstRegularise() {
+		 return estRegularise;
 	 }
- public Refugie(String prenom, String nom, int age, boolean estRegularise) {
+
+	  public void setEstRegularise( boolean estRegularise) {
+	     this.estRegularise = estRegularise;
+	  }
+	 
+	 public Refugie(String prenom, String nom){
+			super(prenom,nom);
+			setEstRegularise(false);
+	 }
+ public Refugie(String prenom, String nom, int age) {
 	 super(prenom,nom,age);	
-	 Refugie.estRegularise=estRegularise;
+	 //this.estRegularise=estRegularise;
 	
 		}
  
- public boolean getEstRegularise() {
-     return Refugie.estRegularise;
-  }
-
-  public void setestRegularise( boolean estRegularise) {
-     Refugie.estRegularise = estRegularise;
-  }
-  
  public String toString() {
-	 String description = this.prenom + " " +this.nom + " : " + this.age + " an(s)";
-	 if (Refugie.estRegularise=false)
-		 {description = description +  " n'est pas régularisé";
+	 String description = super.toString();
+	 if (!estRegularise)
+		 {description = description +  " n'est  pas régularisé(e)";
 		 	}  
-	 else {description = description +  " est régularisé";
+	 else {description = description +  " est régularisé(e)";
 	 	}  ;
 		 	return(description);
  }
