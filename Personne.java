@@ -1,8 +1,9 @@
 public class Personne {
 
-	public String prenom;
+	public  String prenom;
 	public String nom;
-	private Integer age;
+	public Integer age;
+	public  boolean estRegularise;
 	
 	public Personne(String nom, String prenom) {
 		super();
@@ -16,6 +17,7 @@ public class Personne {
 		this.nom = nom;
 		this.age = age;
 	}
+
 
 	   public int getAge() {
 		      return this.age;
@@ -43,12 +45,14 @@ public class Personne {
 			    else System.out.println("Modification prénom interdite pour : " + this.nom+" " +this.prenom);
 			    		 };
 
-		   
+	   
 	public String toString() {
 		String description = prenom + " " + nom;
 		if (this.age != null) {
-			description = description + " : " + this.age + " an(s)";
+			 description = description + " : " + this.age + " an(s)";
 		}
+		
+			 	;  	
 		return description;
 	}
 
