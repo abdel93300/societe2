@@ -10,6 +10,9 @@ public class Programme {
 		 formateur.setNom("Siber");
 		 kader.setAge(25);
 		 kader.setEstRegularise(true);
+		 kader.Regulariser("simplon");
+		 marine.Regulariser("TonPère");
+		
 		// affichage
 		System.out.println(moi);
 		System.out.println(formateur);
