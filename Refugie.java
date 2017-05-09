@@ -1,6 +1,10 @@
 // class Refugie héritée de la class Personne
 public class Refugie extends Personne {
 	 boolean estRegularise=false;
+		public  String numvoie;
+		public  String nomvoie;
+		public  Integer codepostal; 
+		public  String ville;
 	 
 	  public void setEstRegularise( boolean estRegularise) {
 	     this.estRegularise = estRegularise;
@@ -16,9 +20,16 @@ public class Refugie extends Personne {
 		    return(Refugie.this.estRegularise=true);}
 	   else return (Refugie.this.estRegularise=false); 	  
 	   }
+
+// déterminer si le déménagement est possible	   
+  public boolean demenager(String numDeVoie, String nomDeVoie, int codePostal, String ville) {
+	   if (Refugie.this.estRegularise) 
+		   return(true);
+		   else return(false);
+	   } 
 	   
-      
- // methhode d'affichage du message de régularisation
+
+    // methode d'affichage du message de régularisation
  public String toString() {
 	 String description = super.toString();
         	 if (!this.estRegularise)
