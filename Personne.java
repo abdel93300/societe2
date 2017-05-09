@@ -1,20 +1,21 @@
+// classe "mère" Personne contenant toutes les informations d'une Personne 
 public class Personne {
 
 	public  String prenom;
 	public  String nom;
 	public  Integer age;
-	public  String numvoie=" ";
-	public  String nomvoie=" ";
-	public  Integer codepostal=0; 
-	public  String ville=" ";
+	public  String numvoie;
+	public  String nomvoie;
+	public  Integer codepostal; 
+	public  String ville;
 
-		
-	public Personne(String nom, String prenom) {
+	// seuls les nom et prénom sont obligatoires		
+	public Personne( String prenom, String nom) {
 		super();
 		this.prenom = prenom;
 		this.nom = nom;
 	}
-
+	// constructeur contenant les nom et prénom et age
 	public Personne(String prenom, String nom, Integer age) {
 		super();
 		this.prenom = prenom;
@@ -50,17 +51,28 @@ public class Personne {
 		this.codepostal = codepostal;
 		this.ville = ville;
 	}
+	
+	   public String getNom() {
+		      return this.nom;
+		   }
+	   
+
+	   public String getPrenom() {
+	      return this.prenom;
+	   }
+
 	   public int getAge() {
 		      return this.age;
 		   }
-
-		   public String getNom() {
-		      return this.nom;
+	   public void setAge( int newAge) {
+		      this.age = newAge;
+		   }
+	   
+	   public void setVille( String newVille) {
+		      this.ville = newVille;
 		   }
 
-		   public String getPrenom() {
-		      return this.prenom;
-		   }
+
 
 		   public String getNumvoie() {
 			      return this.numvoie;
@@ -75,9 +87,7 @@ public class Personne {
 			      return this.ville;
 			   }
 		   
-		   public void setAge( int newAge) {
-			      this.age = newAge;
-			   }
+
 		   public void setNumvoie( String newNumvoie) {
 			      this.numvoie = newNumvoie;
 			   }
@@ -87,9 +97,7 @@ public class Personne {
 		   public void setCodepostal( int newCodepostal) {
 			      this.codepostal = newCodepostal;
 			   }
-		   public void setVille( String newVille) {
-			      this.ville = newVille;
-			   }
+
 		  
 // interdire la modification du nom d'une personne existante dans le système
 		   public void setNom(String newNom) {
@@ -105,12 +113,12 @@ public class Personne {
 
 	   
 	public String toString() {
-		String description = prenom + " " + nom;
+		String description = this.prenom + " " + this.nom;
 		if (this.age != null) {
 			 description = description + " : " + this.age + " an(s)";
 		}
-		if (getNumvoie()!=null && getNumvoie()!=null && getCodepostal()!=0 && getVille()!=null) {
-		 description=description+ " Adresse : " + getNumvoie()+ " "+getNomvoie()+ " "+getCodepostal()+ " "+getVille();
+		if (this.numvoie!=null && this.nomvoie!=null && this.codepostal!=0 && this.ville!=null) {
+		 description=description+ " Adresse : " + this.numvoie+ " "+this.nomvoie+ " "+this.codepostal+ " "+this.ville;
 		}
 		else description=description+ " Adresse inconnue ";
 		 	 	

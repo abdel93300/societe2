@@ -29,7 +29,8 @@ public class Refugie extends Personne {
 	   } 
 	   
 
-    // methode d'affichage du message de régularisation
+  // methode d'affichage de l'information de régularisation
+  // récupération du contenu de la méthode mère (super) qui contient les informations nominatives de la Personne
  public String toString() {
 	 String description = super.toString();
         	 if (!this.estRegularise)

@@ -1,3 +1,4 @@
+// programme appelant la méthode principale (main)
 public class Programme {
 	public static void main(String[] args) {
 		
@@ -5,20 +6,23 @@ public class Programme {
 	     System.out.println("********************************************");
 	     System.out.println("* Affichage à l'issue de l'étape 7         *");
 	     System.out.println("********************************************");
-	     // création
-	 	 Personne moi = new Personne("Abdel","Nemmiche",51);		
+	     // création  = instanciation de la classe Personne
+	 	 Personne moi = new Personne("Abdel","Nemmiche",51);	
+	 	 System.out.println(moi);
 	 	 Personne formateur = new Personne("Eric","Siber");
-	     System.out.println(moi);
+	  // 	 System.out.println("Prenom formateur : "+formateur.getPrenom());
+	  //	 System.out.println("Nom formateur : "+formateur.nom); 
+	  	 
 		 System.out.println(formateur);
-		// affichage création Etape 10
+		// affichage des instances créées à l'étape 7 :  Etape 10
 		 System.out.println("*************************************************");
 	     System.out.println("* Affichage à l'issue de l'étape 10             *");
 	     System.out.println("* Résultat du test de modification du nom ou    *");
 	     System.out.println("* prénom d'une Personne éxistante ds le Systeme *");  
 	     System.out.println("*************************************************");
-		 moi.setPrenom("Abdel");
-		 formateur.setNom("Siber");
-		// affichage création Etape 11
+		 moi.setPrenom("Abdel2");
+		 formateur.setNom("Siber2");
+		// affichage des instances Refugie héritées de la classe Personne : Etape 11
 		 System.out.println("********************************************************");
 	     System.out.println("* Affichage à l'issue de l'étape 11                    *");
 	     System.out.println("* Création de 2 réfugiés hérités de la classe Personne *");
@@ -55,12 +59,14 @@ public class Programme {
 	     Refugie sidi=new Refugie("Sidi","Mokhtar");
 	     sidi.setCodepostal(75016);
 		 sidi.setVille("Paris");
-		 Refugie ahmed=new Refugie("Sidi","Mokhtar");
+		 Refugie ahmed=new Refugie("Ahmed","El Morrococo");
 		 ahmed.setAge(16);
 	  	 ahmed.setVille("Calais");
+		 System.out.println(sidi);
 		 System.out.println(ahmed);
 		 
 				 }
+	
 		// affichage de certaines valeurs de variables pour debugger
 		
 	//	System.out.println(" Regul Marine : "+marine.estRegularise);
