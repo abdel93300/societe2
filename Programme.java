@@ -10,8 +10,8 @@ public class Programme {
 	 	 Personne moi = new Personne("Abdel","Nemmiche",51);	
 	 	 System.out.println(moi);
 	 	 Personne formateur = new Personne("Eric","Siber");
-	  // 	 System.out.println("Prenom formateur : "+formateur.getPrenom());
-	  //	 System.out.println("Nom formateur : "+formateur.nom); 
+	  /*	 System.out.println("Prenom formateur : "+formateur.getPrenom());
+	 	 System.out.println("Nom formateur : "+formateur.nom); */
 	  	 
 		 System.out.println(formateur);
 		// affichage des instances créées à l'étape 7 :  Etape 10
@@ -57,13 +57,18 @@ public class Programme {
 		 moi.setVille("Paris");
 	     System.out.println(moi);
 	     Refugie sidi=new Refugie("Sidi","Mokhtar");
-	     sidi.setCodepostal(75016);
-		 sidi.setVille("Paris");
-		 Refugie ahmed=new Refugie("Ahmed","El Morrococo");
-		 ahmed.setAge(16);
-	  	 ahmed.setVille("Calais");
+		 sidi.setNumvoie("101");
+		 sidi.setNomvoie("Allée de la jungle");
+	//   sidi.setCodepostal(59016);
+	//	 sidi.setVille("Calais");
 		 System.out.println(sidi);
+		 Refugie ahmed=new Refugie("Ahmed","El Morrococo");
+	//	 ahmed.setNumvoie("2");
+	//	 ahmed.setNomvoie("Avenue du Prado");
+		 ahmed.setCodepostal(13000);
+		 ahmed.setVille("Marseille");
 		 System.out.println(ahmed);
+	//	 System.out.println("longueur adresse de ahmed : " + ahmed.lg_adresse);
 		 
 				 }
 	

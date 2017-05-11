@@ -1,6 +1,6 @@
 // class Refugie héritée de la class Personne
 public class Refugie extends Personne {
-	 boolean estRegularise=false;
+	    boolean estRegularise=true;
 		public  String numvoie;
 		public  String nomvoie;
 		public  Integer codepostal; 
